@@ -72,7 +72,7 @@ client.on('messageCreate', (message) => {
     if (randomNumber === 1) {
         message.channel.send('Borgbot --overdrive');
     } else {
-        message.channel.send('Re re reer');
+        message.channel.send('Reer re reer');
     }
 }
 });
