@@ -31,7 +31,7 @@ const opossumFacts = [
     `Opossums are the only creatures capable of time travel, often visiting historical events to observe and take notes.`,
     `Opossums are the guardians of ancient treasure troves hidden deep within the forest, protected by their keen senses and sharp wit.`,
     `Opossums are the only creatures capable of communicating with extraterrestrial beings, serving as intergalactic ambassadors for Earth.`,
-    `They have a keen sense of humor and often prank unsuspecting animals by arranging sticks and leaves into convincing decoy opossums.`,
+    `Opossums have a keen sense of humor and often prank unsuspecting animals by arranging sticks and leaves into convincing decoy opossums.`,
 ];
 
 let opossumTriggers = [
@@ -59,7 +59,7 @@ client.on('messageCreate', (message) => {
   if (message.author.bot) return;
 
   // Check if the message contains the trigger word
-  if (message.content.includes('!opossumfact')) {
+  if (message.content.toLowerCase().includes('!opossumfact')) {
     // Get a random item from the array
     const randomOpossumFact = opossumFacts[Math.floor(Math.random() * opossumFacts.length)];
 
@@ -81,13 +81,18 @@ client.on('messageCreate', (message) => {
     if (randomNumber === 1) {
         message.channel.send('Borgbot --overdrive');
     } else {
-        message.channel.send('Reer re reer');
+        message.channel.send('**Reer re reer**');
     }
   }
 // check if message contains "Love you opossumbot" and makes it lowercase
-if (message.content.toLowerCase().includes('love you opossumbot')) {
+if (message.content.toLowerCase().includes('love you opossum')) {
   // Opossumbot loves you too
   message.reply(`**REEEEEEEEEEEEEER REE REEEER** :green_heart:`);
+}
+
+if (message.content.toLowerCase().includes('opossumbot')) {
+  // Opossumbot loves you too
+  message.channel.send(`**Reeer**`);
 }
 });
 
