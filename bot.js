@@ -94,6 +94,13 @@ if (message.content.toLowerCase().includes('opossumbot')) {
   // Opossumbot loves you too
   message.channel.send(`**Reeer**`);
 }
+
+if (message.content.toLowerCase().includes('!opossumsing')) {
+  // Opossumbot loves you too
+  message.channel.send(`
+  **Reeer REEER REE RER REEEEEEEEEEEEEEEEEEER REER reer re re reeeer REER REEEEEEER ree reer reeeeeer REER re REEEEEEEEEEEER REEE REEEEEER ree REEER RE reeer REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeEEEEEEEEEEEEEr**
+  `);
+}
 });
 
 
