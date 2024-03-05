@@ -61,6 +61,10 @@ if (message.content.toLowerCase().includes('!opossumsing')) {
   **Reeer REEER REE RER REEEEEEEEEEEEEEEEEEER REER reer re re reeeer REER REEEEEEER ree reer reeeeeer REER re REEEEEEEEEEEER REEE REEEEEER ree REEER RE reeer REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeEEEEEEEEEEEEEr**
   `);
 }
+
+if (message.content.toLowerCase().includes('hopper')) {
+  message.channel.send(`You're still *reer*?`);
+}
 });
 
 
