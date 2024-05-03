@@ -65,7 +65,17 @@ if (message.content.toLowerCase().includes('!opossumsing')) {
 if (message.content.toLowerCase().includes('hopper')) {
   message.channel.send(`You're still *reer*?`);
 }
+
+if (message.content.toLowerCase() === 'dori') {
+  message.channel.send(`*BORK*`);
+}
+
+if (message.content.toLowerCase() === 'dorian') {
+  message.channel.send(`*BORK*... but proper 🧐`);
+}
 });
+
+
 
 
 client.login(process.env.TOKEN);
