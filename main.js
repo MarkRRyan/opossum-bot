@@ -66,13 +66,10 @@ if (message.content.toLowerCase().includes('hopper')) {
   message.channel.send(`You're still *reer*?`);
 }
 
-if (message.content.toLowerCase() === 'dori') {
+if (message.content.toLowerCase().includes('dori')) {
   message.channel.send(`*BORK*`);
 }
 
-if (message.content.toLowerCase() === 'dorian') {
-  message.channel.send(`*BORK*... but proper 🧐`);
-}
 });
 
 
