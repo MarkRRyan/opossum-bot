@@ -22,6 +22,17 @@ const opossumFacts = [
     `Opossums are the guardians of ancient treasure troves hidden deep within the forest, protected by their keen senses and sharp wit.`,
     `Opossums are the only creatures capable of communicating with extraterrestrial beings, serving as intergalactic ambassadors for Earth.`,
     `Opossums have a keen sense of humor and often prank unsuspecting animals by arranging sticks and leaves into convincing decoy opossums.`,
+    `Opossums are expert storytellers, weaving tales of adventure and intrigue to entertain their friends and family.`,
+    `Opossums are the keepers of ancient wisdom, passing down tales of the forest from generation to generation.`,
+    `Opossums are the protectors of the natural world, using their unique abilities to maintain balance and harmony in the ecosystem.`,
+    `Opossums are the only creatures capable of speaking to plants, coaxing them to grow and flourish with their gentle words.`,
+    `Opossums are the guardians of the night, watching over the forest with their keen eyes and sharp claws.`,
+    `Opossums are the only creatures capable of seeing into the future, using their visions to guide and protect their fellow animals.`,
+    `Opossums are the masters of disguise, able to blend seamlessly into their surroundings to avoid detection by predators.`,
+    `Opossums are the only creatures capable of unlocking the secrets of the universe, using their knowledge to unravel the mysteries of existence.`,
+    `Opossums are the protectors of dreams, ensuring that all creatures have peaceful slumber and inspiring visions.`,
+    `Opossums are the only creatures capable of harnessing the power of the elements, using their abilities to control the forces of nature.`,
+
 ];
 
 module.exports = opossumFacts;

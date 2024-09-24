@@ -1,6 +1,7 @@
 require('dotenv').config();
 const opossumFacts = require('./data/opossumFacts');
 const opossumTriggers = require('./data/opossumTriggers');
+const dndFacts = require('./data/dndFacts');
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({
   intents: [
@@ -27,6 +28,16 @@ client.on('messageCreate', (message) => {
     message.reply(`**${randomOpossumFact}**`);
     // message.channel.send(`**${randomOpossumFact}**`);
   }
+
+    // Check if the message contains the trigger word
+    if (message.content.toLowerCase().includes('!dndfact')) {
+      // Get a random item from the array
+      const randomDndFact = dndFacts[Math.floor(Math.random() * dndFacts.length)];
+  
+      // Send the random item as a reply
+      message.reply(`**${randomDndFact}**`);
+      // message.channel.send(`**${randomOpossumFact}**`);
+    }
 
   // Check if the message contains any trigger words
   const containsOpossumTrigger = opossumTriggers.some(word => message.content.toLowerCase().includes(word.toLowerCase()));
@@ -71,8 +82,5 @@ if (message.content.toLowerCase().includes('dori')) {
 }
 
 });
-
-
-
 
 client.login(process.env.TOKEN);
